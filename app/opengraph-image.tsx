@@ -26,36 +26,14 @@ export default async function Image() {
           backgroundSize: "100px 100px",
         }}
       >
-        {/* Logo/Initials */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginBottom: 40,
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              fontSize: 120,
-              fontWeight: 700,
-              color: "#ffffff",
-              letterSpacing: "-0.05em",
-            }}
-          >
-            AV
-          </div>
-        </div>
-
         {/* Name */}
         <div
           style={{
             display: "flex",
-            fontSize: 60,
+            fontSize: 72,
             fontWeight: 700,
             color: "#ffffff",
-            marginBottom: 20,
+            marginBottom: 24,
             letterSpacing: "-0.02em",
           }}
         >

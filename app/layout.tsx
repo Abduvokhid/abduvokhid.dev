@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 import { ThemeProvider } from "@/components/theme-provider";
 import { JsonLd } from "@/components/json-ld";
 import "./globals.css";
@@ -85,6 +86,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="0f22f5bf-36c0-4662-bd4b-2ef45519b322"
+          strategy="lazyOnload"
+        />
         <JsonLd />
       </head>
       <body

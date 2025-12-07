@@ -15,6 +15,10 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# Build-time environment variables (NEXT_PUBLIC_*)
+ARG NEXT_PUBLIC_SITE_URL
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
+
 RUN npm run build
 
 # Production image, copy all the files and run next
