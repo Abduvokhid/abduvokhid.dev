@@ -21,11 +21,24 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#0a0a0a",
-          backgroundImage:
-            "radial-gradient(circle at 25px 25px, #1a1a1a 2%, transparent 0%), radial-gradient(circle at 75px 75px, #1a1a1a 2%, transparent 0%)",
-          backgroundSize: "100px 100px",
+          position: "relative",
         }}
       >
+        {/* Grid pattern layer */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage:
+              "linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+            maskImage: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.1) 10%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 40%, black 55%)",
+            WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.1) 10%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 40%, black 55%)",
+          }}
+        />
         {/* Name */}
         <div
           style={{
@@ -59,7 +72,7 @@ export default async function Image() {
             gap: 16,
           }}
         >
-          {["FinTech", "BNPL", "Payments", "Cybersecurity"].map((tag) => (
+          {["FinTech", "Payments", "Anti-fraud", "BNPL", "Cybersecurity"].map((tag) => (
             <div
               key={tag}
               style={{
