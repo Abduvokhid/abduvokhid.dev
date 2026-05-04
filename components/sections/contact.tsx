@@ -67,12 +67,9 @@ export function Contact() {
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
               >
-                <link.icon className="h-4 w-4" />
-                <span className="hidden sm:inline">{link.label}</span>
-                <span className="sm:hidden">
-                  {link.label.includes("@")
-                    ? link.label.split("@")[0]
-                    : link.label}
+                <link.icon className="h-4 w-4 shrink-0" />
+                <span className="break-all text-left sm:break-normal">
+                  {link.label}
                 </span>
                 {link.external && (
                   <ArrowUpRight className="h-3 w-3 opacity-50" />

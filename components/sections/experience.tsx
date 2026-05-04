@@ -18,12 +18,11 @@ export function Experience() {
             </div>
             <div className="space-y-2 pb-8">
               <p className="text-sm text-muted-foreground">2025 — Present</p>
-              <h3 className="font-semibold">FinTech & Islamic Banking (Confidential)</h3>
+              <h3 className="font-semibold">FinTech & Islamic Banking</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Company name not disclosed (NDA). Building the next generation of 
-                financial infrastructure in Uzbekistan—engineering secure core systems, 
-                payments, and Sharia-compliant banking products that support inclusive 
-                finance and regulatory alignment.
+                Building the next generation of financial infrastructure in Uzbekistan—
+                engineering secure core systems, payments, and Sharia-compliant banking 
+                products that support inclusive finance and regulatory alignment.
               </p>
             </div>
           </div>
@@ -33,13 +32,13 @@ export function Experience() {
               <div className="w-px flex-1 bg-border" />
             </div>
             <div className="space-y-2 pb-8">
-              <p className="text-sm text-muted-foreground">2023 — 2025</p>
+              <p className="text-sm text-muted-foreground">2025 — 2025</p>
               <h3 className="font-semibold">Cybersecurity & Threat Intelligence</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Led development of a multi-tenant Threat Intelligence as a Service 
                 platform at ONESEC LLC. Designed microservices and event-driven 
                 architecture, managed cross-functional teams, and drove strategic 
-                product vision through 2025.
+                product vision.
               </p>
             </div>
           </div>
